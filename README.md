@@ -1,0 +1,1 @@
+This is the repository for all of the bits of code I am learning through this course taught by Jonas Schmedtmann. I will come back to this and change things as I learn more I just wanted to test what github doea a bit.
