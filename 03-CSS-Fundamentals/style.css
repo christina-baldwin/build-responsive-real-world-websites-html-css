@@ -115,6 +115,5 @@ a:active {
   color: yellow;
 }
 footer p {
-  color: green; */
-}
+  color: green; } */
 /* On the browser it shows up as red becuse the ID selector has priority */
