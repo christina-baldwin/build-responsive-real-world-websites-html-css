@@ -1,3 +1,8 @@
+/* Had to use inhert on the universal selector because the button element was not inheriting line height b/c come with predefined properties */
+* {
+  line-height: inherit;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
