@@ -1,7 +1,4 @@
 /* * {} = Universal selector: This selects all elements in the code */
-/* * {
-  border-top: 10px solid #1098ad;
-} */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +10,14 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  /* do this to center the web page */
+}
+
 .main-header {
   background-color: #dfdfdf;
   /* padding: 20px;
@@ -21,6 +26,7 @@ body {
   padding: 20px 40px;
   /* 1st value is padding on left/right and 2nd value padding on top/bottom */
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -42,6 +48,8 @@ aside {
   padding: 50px 0;
   /* padding-top: 50px;
   padding-bottom: 50px; */
+  width: 500px;
+  /* this will be a sidebar so no need to be as wide as the page */
 }
 
 h1,
@@ -80,58 +88,34 @@ ol {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
 li {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* remove the margin from the last list element as we do not need that space */
 li:last-child {
   margin-bottom: 0;
+  /* to remove the margin from the last list element as we do not need that space */
 }
 
-/* footer p {
-  font-size: 16px;
-} */
 #copyright {
   font-size: 16px;
 }
 
-/*article header p {
-  font-style: italic;
-}*/
 #author {
   font-style: italic;
   font-size: 18px;
 }
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* ul {
-  list-style: none;
-} */
 .related {
   list-style: none;
 }
-
-/* body {
-  background-color: orange;
-} */
-
-/* .first-li {
-  font-weight: bold;
-} */
-/* li:first-child {
-  font-weight: bold;
-}
-li:last-child {
-  font-style: italic;
-}
-li:nth-child(2) {
-  color: red;
-} */
 
 a:link {
   color: #1098ad;
@@ -155,6 +139,42 @@ a:active {
   font-family: sans-serif;
 }
 
+.post-img {
+  /* percentages means the image adapts to zooming in/out of the webpage and the screen width */
+  width: 100%;
+  /* we do this so we don't mess with the aspect ratio due to height being set in html */
+  height: auto;
+}
+
+/* DEMOS */
+
+/* * {
+  border-top: 10px solid #1098ad;
+} */
+/*article header p {
+  font-style: italic;
+}*/
+/* footer p {
+  font-size: 16px;
+} */
+/* ul {
+  list-style: none;
+} */
+/* body {
+  background-color: orange;
+} */
+/* .first-li {
+  font-weight: bold;
+} */
+/* li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(2) {
+  color: red;
+} */
 /* Resolving conflicts */
 /* #copyright {
   color: red;
@@ -168,7 +188,6 @@ a:active {
 footer p {
   color: green; } */
 /* On the browser it shows up as red becuse the ID selector has priority */
-
 /* nav a:link,
 nav p {
   font-size: 18px;
