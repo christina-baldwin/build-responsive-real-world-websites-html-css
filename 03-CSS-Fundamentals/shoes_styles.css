@@ -1,6 +1,8 @@
 /* Had to use inhert on the universal selector because the button element was not inheriting line height b/c come with predefined properties */
 * {
   line-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,24 +10,24 @@ body {
   line-height: 1.4;
 }
 
-/* TITLE */
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #dddddd;
-  font-size: 17px;
+.container {
+  width: 825px;
+  margin: 0 auto;
 }
-
-/* PRODUCT PAGE */
-h4 {
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
 .product {
   border: 5px solid black;
 }
 
+/* TITLE */
+.product-title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #dddddd;
+  font-size: 17px;
+  padding: 10px 10px;
+}
+
+/* PRODUCT PAGE */
 .price {
   font-size: 22px;
   font-weight: bold;
@@ -36,6 +38,11 @@ h4 {
   font-size: 12px;
   color: #2e2e2e;
   font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin-bottom: 10px;
 }
 
 /* MORE INFO */
@@ -45,29 +52,47 @@ h4 {
   text-decoration: underline solid;
 }
 
-.mpre-info:active,
+.more-info:active,
 .more-info:hover {
   color: black;
   text-decoration: none;
 }
 
 /* PRODUCT DETAILS */
-.details {
-  list-style: square;
+.details-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-/* ADD TO CART */
-button {
+.details-list li {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* ADD TO CART BUTTON */
+.add-cart {
   background-color: black;
   color: white;
   text-transform: uppercase;
-  border: none;
+  border: none; /* had to put this because it was showing a grey border on the left */
+  border-top: 5px solid black;
+  padding: 10px 10px;
+  width: 100%;
+  height: auto;
 }
 
-button:hover {
+.add-cart:hover,
+.add-cart:active {
   background-color: white;
   color: black;
   text-transform: uppercase;
-  border: none;
   cursor: pointer;
+  border: none;
+  border-top: 5px solid black;
+  /* padding: 4px 4px; */
+  width: 100%;
+  height: auto;
 }
