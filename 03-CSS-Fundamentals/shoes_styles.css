@@ -12,7 +12,8 @@ body {
 
 .container {
   width: 825px;
-  margin: 0 auto;
+  margin: 20px auto;
+  position: relative;
 }
 .product {
   border: 5px solid black;
@@ -25,6 +26,22 @@ body {
   background-color: #dddddd;
   font-size: 17px;
   padding: 10px 10px;
+}
+
+/* SALE */
+.product-title::after {
+  content: "SALE";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  background-color: red;
+  padding: 6px 12px;
+
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -25px;
 }
 
 /* PRODUCT PAGE */
@@ -50,6 +67,8 @@ body {
 .more-info:visited {
   color: black;
   text-decoration: underline solid;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .more-info:active,
@@ -58,17 +77,66 @@ body {
   text-decoration: none;
 }
 
+/* SHOE COLOURS */
+.black {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.blue {
+  background-color: rgb(20, 117, 196);
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.red {
+  background-color: red;
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.yellow {
+  background-color: rgb(241, 215, 65);
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.green {
+  background-color: rgb(65, 180, 94);
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.brown {
+  background-color: rgb(143, 87, 41);
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
 /* PRODUCT DETAILS */
 .details-title {
   text-transform: uppercase;
   font-size: 15px;
   margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .details-list li {
   list-style: square;
-  margin-left: 20px;
+  margin-left: 23px;
   margin-bottom: 10px;
 }
 
