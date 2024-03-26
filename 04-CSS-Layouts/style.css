@@ -34,7 +34,7 @@ body {
 
 nav {
   font-size: 18px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .post-header {
@@ -197,10 +197,26 @@ h2::after {
   /* negative pixel length moves the pseudoelement outside the parent element */
 }
 
-/* h3 + p::first-line {
-  color: red;
-  this is selecting the first line of adjacent siblings
-} */
+/* FLOATS */
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
 
 /* DEMOS */
 
@@ -250,4 +266,8 @@ nav p {
 } */
 /* p::first-line {
   color: red;
+} */
+/* h3 + p::first-line {
+  color: red;
+  this is selecting the first line of adjacent siblings
 } */
