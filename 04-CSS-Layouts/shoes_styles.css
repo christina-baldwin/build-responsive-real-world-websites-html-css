@@ -3,6 +3,7 @@
   line-height: inherit;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 .container {
-  width: 825px;
+  width: 908px;
   margin: 20px auto;
   position: relative;
 }
@@ -24,7 +25,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: #dddddd;
-  font-size: 17px;
+  font-size: 20px;
   padding: 10px 10px;
 }
 
@@ -45,9 +46,25 @@ body {
 }
 
 /* PRODUCT PAGE */
+/* left page */
+.shoes {
+  width: 300px;
+  float: left;
+}
+
+/* centre page */
+.centre {
+  width: 300px;
+  float: left;
+  padding: 33px;
+}
 .price {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: bold;
+  float: left;
+  width: 100px;
+  height: 31px;
+  margin-bottom: 15px;
 }
 
 .shipping {
@@ -55,11 +72,15 @@ body {
   font-size: 12px;
   color: #2e2e2e;
   font-weight: bold;
-  margin-bottom: 15px;
+  float: right;
+  width: 120px;
+  height: 31px;
+  padding-top: 5px;
 }
 
 .description {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  float: left;
 }
 
 /* MORE INFO */
@@ -68,7 +89,7 @@ body {
   color: black;
   text-decoration: underline solid;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .more-info:active,
@@ -127,7 +148,13 @@ body {
   display: inline-block;
 }
 
+/* right page */
 /* PRODUCT DETAILS */
+.right {
+  float: right;
+  width: 300px;
+  padding: 33px;
+}
 .details-title {
   text-transform: uppercase;
   font-size: 15px;

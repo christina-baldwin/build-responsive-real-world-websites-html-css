@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -50,11 +51,7 @@ aside {
   background-color: #dfdfdf;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  width: 500px;
-  /* this will be a sidebar so no need to be as wide as the page */
+  padding: 50px 40px;
 }
 
 h1,
@@ -75,7 +72,7 @@ h2 {
 }
 h3 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 40px;
 }
 h4 {
@@ -122,6 +119,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 a:link {
@@ -204,18 +202,34 @@ h2::after {
   margin-left: 20px;
   font-style: italic;
 }
-
 .author-img {
   float: left;
   margin-bottom: 20px;
 }
-
 h1 {
   float: left;
 }
-
 nav {
   float: right;
+}
+.clear {
+  clear: both;
+}
+.clear-fix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
 
 /* DEMOS */
