@@ -11,12 +11,10 @@ body {
   line-height: 1.4;
 }
 
-.container {
+.product {
   width: 908px;
   margin: 20px auto;
   position: relative;
-}
-.product {
   border: 5px solid black;
 }
 
@@ -46,25 +44,13 @@ body {
 }
 
 /* PRODUCT PAGE */
-/* left page */
-.shoes {
-  width: 300px;
-  float: left;
-}
-
 /* centre page */
-.centre {
-  width: 300px;
-  float: left;
-  padding: 33px;
-}
 .price {
   font-size: 23px;
   font-weight: bold;
-  float: left;
   width: 100px;
   height: 31px;
-  margin-bottom: 15px;
+  /* margin-bottom: 18px; */
 }
 
 .shipping {
@@ -72,15 +58,11 @@ body {
   font-size: 12px;
   color: #2e2e2e;
   font-weight: bold;
-  float: right;
-  width: 120px;
-  height: 31px;
-  padding-top: 5px;
 }
 
 .description {
   margin-bottom: 15px;
-  float: left;
+  font-size: 17px;
 }
 
 /* MORE INFO */
@@ -105,7 +87,6 @@ body {
   width: 22px;
   margin-right: 10px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 .blue {
   background-color: rgb(20, 117, 196);
@@ -113,7 +94,6 @@ body {
   width: 22px;
   margin-right: 10px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 .red {
   background-color: red;
@@ -121,7 +101,6 @@ body {
   width: 22px;
   margin-right: 10px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 .yellow {
   background-color: rgb(241, 215, 65);
@@ -129,7 +108,6 @@ body {
   width: 22px;
   margin-right: 10px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 .green {
   background-color: rgb(65, 180, 94);
@@ -137,7 +115,6 @@ body {
   width: 22px;
   margin-right: 10px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 .brown {
   background-color: rgb(143, 87, 41);
@@ -145,26 +122,23 @@ body {
   width: 22px;
   margin-right: 10px;
   margin-bottom: 10px;
-  display: inline-block;
 }
 
 /* right page */
 /* PRODUCT DETAILS */
-.right {
-  float: right;
-  width: 300px;
-  padding: 33px;
-}
+
 .details-title {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .details-list li {
   list-style: square;
   margin-left: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  font-size: 17px;
 }
 
 /* ADD TO CART BUTTON */
@@ -187,7 +161,36 @@ body {
   cursor: pointer;
   border: none;
   border-top: 5px solid black;
-  /* padding: 4px 4px; */
   width: 100%;
   height: auto;
+}
+
+/* FLEX */
+
+.row {
+  display: flex;
+  flex: 1 1 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.grow {
+  flex: 1 1 0px;
+}
+
+.row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
+
+.colours {
+  display: flex;
+}
+
+.right {
+  margin-right: 20px;
 }

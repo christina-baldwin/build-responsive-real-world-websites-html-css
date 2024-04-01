@@ -228,6 +228,25 @@ h2::after {
   font-weight: normal;
   font-style: italic;
 }
+.row {
+  /* this is the flex container */
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  /* default for the aligned items is stretch which is usually what we want but sometimes we don't want this */
+  align-items: flex-start;
+}
+
+article {
+  /* allows the element to fill the space that makes sense */
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  /* flex-grow, flex-shrink, flex-basis */
+  flex: 0 0 300px;
+}
 
 /* FLOATS - THIS IS OUTDATED */
 /* .author {
