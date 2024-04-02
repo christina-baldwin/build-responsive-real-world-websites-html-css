@@ -29,7 +29,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   /* 1st value is padding on left/right and 2nd value padding on top/bottom */
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -43,9 +43,9 @@ nav {
   /* position: relative; */
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 aside {
   background-color: #dfdfdf;
@@ -228,25 +228,44 @@ h2::after {
   font-weight: normal;
   font-style: italic;
 }
-.row {
-  /* this is the flex container */
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
+}
+
+/* FLEXBOX */
+/* .row {
+  this is the flex container
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
-  /* default for the aligned items is stretch which is usually what we want but sometimes we don't want this */
+  default for the aligned items is stretch which is usually what we want but sometimes we don't want this
   align-items: flex-start;
 }
 
 article {
-  /* allows the element to fill the space that makes sense */
+  allows the element to fill the space that makes sense
   flex: 1;
   margin-bottom: 0;
 }
 
 aside {
-  /* flex-grow, flex-shrink, flex-basis */
+  flex-grow, flex-shrink, flex-basis
   flex: 0 0 300px;
-}
+} */
 
 /* FLOATS - THIS IS OUTDATED */
 /* .author {

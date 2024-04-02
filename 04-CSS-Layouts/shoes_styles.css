@@ -13,7 +13,7 @@ body {
 
 .product {
   width: 908px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   position: relative;
   border: 5px solid black;
 }
@@ -148,8 +148,8 @@ body {
   text-transform: uppercase;
   border: none; /* had to put this because it was showing a grey border on the left */
   border-top: 5px solid black;
-  padding: 10px 10px;
-  width: 100%;
+  /* padding: 10px 10px; */
+  /* width: 100%; */
   height: auto;
 }
 
@@ -165,21 +165,29 @@ body {
   height: auto;
 }
 
+/* CSS GRID */
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 20px;
+}
+.product-title {
+  grid-column: 1 / -1;
+}
+
+.centre {
+  align-self: center;
+}
+.details {
+  align-self: center;
+}
+.add-cart {
+  grid-column: 1 / -1;
+  height: 40px;
+}
+
 /* FLEX */
-
-.row {
-  display: flex;
-  flex: 1 1 0px;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
-
-.grow {
-  flex: 1 1 0px;
-}
-
-.row-1 {
+.price-shipping {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -190,7 +198,18 @@ body {
 .colours {
   display: flex;
 }
+/* .row {
+  display: flex;
+  flex: 1 1 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+} */
 
-.right {
+/* .grow {
+  flex: 1 1 0px;
+} */
+
+/* .right {
   margin-right: 20px;
-}
+} */
