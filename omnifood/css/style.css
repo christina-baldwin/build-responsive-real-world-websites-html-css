@@ -52,6 +52,7 @@ body {
 /* ***************** */
 /* GENERAL COMPONENTS */
 /* ***************** */
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -103,9 +104,11 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
 /* ***************** */
 /* HEADER */
 /* ***************** */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -120,6 +123,7 @@ body {
 .logo {
   height: 2.2rem;
 }
+
 /* ***************** */
 /* HERO */
 /* ***************** */
