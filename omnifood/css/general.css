@@ -35,6 +35,7 @@ Default: 1
 
 --- 06 BORDER RADIUS
 - Default: 9px
+11px
 
 --- 07 WHITESPACE
 
@@ -166,7 +167,35 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-/* MARGINS THAT WE WANT TO REUSE */
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* SETTINGS CLASSES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bot-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
 }
